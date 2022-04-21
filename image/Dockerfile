@@ -31,7 +31,8 @@ RUN python3 -m pip install --no-cache-dir \
     pytorch_lightning \
     gradio \
     sentencepiece \
-    seqeval
+    seqeval \
+    spacy
 
 
 USER ${NB_UID}
