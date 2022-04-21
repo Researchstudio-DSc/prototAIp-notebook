@@ -1,4 +1,4 @@
-FROM jupyter/base-notebook
+FROM jupyter/datascience-notebook
 
 ENV TRANSFORMERS_CACHE=/tmp/.cache
 ENV TOKENIZERS_PARALLELISM=true
@@ -17,23 +17,11 @@ RUN python3 -m pip install --no-cache-dir --upgrade pip && \
     python3 -m pip install --no-cache-dir \
     jupyter \
     tensorflow-cpu \
-    torch \ 
-    torchvision \
-    torchaudio \
-    jax \
-    jaxlib \
-    optax
-
-RUN python3 -m pip install --no-cache-dir \
-    transformers \
-    datasets\
+    torch \
     nltk \
-    pytorch_lightning \
-    gradio \
-    sentencepiece \
-    seqeval \
-    spacy
-
+    spacy \
+    transformers \
+    datasets
 
 USER ${NB_UID}
 
