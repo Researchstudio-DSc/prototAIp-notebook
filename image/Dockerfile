@@ -1,4 +1,7 @@
-FROM jupyter/datascience-notebook
+FROM jupyter/base-notebook
+
+ENV TRANSFORMERS_CACHE=/tmp/.cache
+ENV TOKENIZERS_PARALLELISM=true
 
 # Add RUN statements to install packages as the $NB_USER defined in the base images.
 
@@ -28,8 +31,7 @@ RUN python3 -m pip install --no-cache-dir \
     pytorch_lightning \
     gradio \
     sentencepiece \
-    seqeval \
-    spacy
+    seqeval
 
 
 USER ${NB_UID}
