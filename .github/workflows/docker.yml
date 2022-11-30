@@ -53,7 +53,7 @@ jobs:
         id: getrefs
 
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
+        uses: docker/setup-buildx-action@v1
         with:
           driver: docker # to be able to test the image locally
 
@@ -84,3 +84,4 @@ jobs:
           file: image/Dockerfile
           tags: |
             rsafgdatascience/prototaip-notebook:${{steps.getrefs.outputs.sha12}}, rsafgdatascience/prototaip-notebook:latest
+          push: true
