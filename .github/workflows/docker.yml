@@ -62,7 +62,7 @@ jobs:
           context: image/
           file: image/Dockerfile
           tags: |
-            michaelbochrsa/prototaip-notebook:latest
+            rsafgdatascience/prototaip-notebook:latest
           push: false
 
       - name: Run tests
@@ -82,4 +82,4 @@ jobs:
           context: image/
           file: image/Dockerfile
           tags: |
-            michaelbochrsa/prototaip-notebook:${{steps.getrefs.outputs.sha12}}, michaelbochrsa/prototaip-notebook:latest
+            rsafgdatascience/prototaip-notebook:${{steps.getrefs.outputs.sha12}}, rsafgdatascience/prototaip-notebook:latest
