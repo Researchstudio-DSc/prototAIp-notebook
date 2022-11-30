@@ -21,7 +21,9 @@ RUN python3 -m pip install --no-cache-dir --upgrade pip && \
     nltk \
     spacy \
     transformers \
-    datasets \
+    datasets
+    
+RUN python3 -m pip install --no-cache-dir \
     gensim \
     ggplot
 
