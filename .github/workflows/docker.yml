@@ -82,3 +82,4 @@ jobs:
           file: image/Dockerfile
           tags: |
             rsafgdatascience/prototaip-notebook:${{steps.getrefs.outputs.sha12}}, rsafgdatascience/prototaip-notebook:latest
+          push: true
