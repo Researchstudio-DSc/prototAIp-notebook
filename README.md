@@ -7,12 +7,12 @@ The collection of these libraries and the implementation of the stack image is p
 [prototAIp](https://www.netidee.at/prototaip) project.
 
 ## Installation with Docker Hub
-- [Docker Hub repo](https://hub.docker.com/r/michaelbochrsa/prototaip-notebook)
+- [Docker Hub repo](https://hub.docker.com/r/rsafgdatascience/prototaip-notebook/tags)
 
 Pull the docker image from Docker Hub and run a container with the following commands
 ```
-docker pull michaelbochrsa/prototaip-notebook
-docker run -p 10000:8888 michaelbochrsa/prototaip-notebook 
+docker pull rsafgdatascience/prototaip-notebook
+docker run -p 10000:8888 rsafgdatascience/prototaip-notebook
 ```
 
 ## Installation with GitHub
