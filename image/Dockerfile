@@ -25,7 +25,10 @@ RUN python3 -m pip install --no-cache-dir --upgrade pip && \
     
 RUN python3 -m pip install --no-cache-dir \
     gensim \
-    ggplot
+    geopandas \
+    ggplot \
+    more-itertools \
+    shapely
 
 USER ${NB_UID}
 
