@@ -33,6 +33,10 @@ RUN python3 -m pip install --no-cache-dir \
     holoviews \
     hvplot
 
+RUN python3 -m pip install --no-cache-dir \
+    chardet
+
+
 USER ${NB_UID}
 
 WORKDIR "${HOME}"
