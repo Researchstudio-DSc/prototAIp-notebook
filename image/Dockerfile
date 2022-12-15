@@ -28,7 +28,10 @@ RUN python3 -m pip install --no-cache-dir \
     geopandas \
     ggplot \
     more-itertools \
-    shapely
+    shapely \
+    panel \
+    holoviews \
+    hvplot
 
 USER ${NB_UID}
 
