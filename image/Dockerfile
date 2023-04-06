@@ -35,6 +35,7 @@ RUN python3 -m pip install --no-cache-dir \
 
 RUN python3 -m pip install --no-cache-dir \
     chardet
+    cuda-python
 
 
 USER ${NB_UID}
