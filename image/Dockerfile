@@ -34,9 +34,14 @@ RUN python3 -m pip install --no-cache-dir \
     hvplot
 
 RUN python3 -m pip install --no-cache-dir \
-    chardet
+    chardet \
     cuda-python
 
+# Install PygWalker
+RUN python3 -m pip install --no-cache-dir pygwalker
+
+# Configure PygWalker for offline use
+RUN pygwalker config --set privacy=offline
 
 USER ${NB_UID}
 
