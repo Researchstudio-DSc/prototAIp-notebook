@@ -22,7 +22,7 @@ RUN python3 -m pip install --no-cache-dir --upgrade pip && \
     spacy \
     transformers \
     datasets
-    
+
 RUN python3 -m pip install --no-cache-dir \
     gensim \
     geopandas \
@@ -35,7 +35,8 @@ RUN python3 -m pip install --no-cache-dir \
 
 RUN python3 -m pip install --no-cache-dir \
     chardet \
-    cuda-python
+    cuda-python \
+    pip install --pre "jupyterlab-git==0.50.0rc0"
 
 # Install PygWalker
 RUN python3 -m pip install --no-cache-dir pygwalker
