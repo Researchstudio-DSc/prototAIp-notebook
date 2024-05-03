@@ -38,6 +38,9 @@ RUN python3 -m pip install --no-cache-dir \
     cuda-python \
     pip install --pre "jupyterlab-git==0.50.0rc0"
 
+# Install pexpect from GitHub
+RUN python3 -m pip install --no-cache-dir git+https://github.com/pexpect/pexpect.git@master
+
 # Install PygWalker
 RUN python3 -m pip install --no-cache-dir pygwalker
 
